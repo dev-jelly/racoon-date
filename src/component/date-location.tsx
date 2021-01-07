@@ -24,8 +24,8 @@ const DateLocation = () => {
     history.goBack();
   };
 
-  let { path, url } = useRouteMatch();
   const { time } = useParams<{ time: string }>();
+
   if (morningUrl.includes(time) || breakfastUrl.includes(time)) {
     return (
       <Box my={4}>
@@ -43,6 +43,7 @@ const DateLocation = () => {
       </Box>
     );
   }
+
   return (
     <Box my={4}>
       <Locations />

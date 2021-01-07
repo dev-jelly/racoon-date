@@ -17,8 +17,8 @@ import {
 type Props = {};
 
 const Intro = () => {
-  const dispatch = useDispatch<DateState>();
-
+  const dispatch = useDispatch();
+  dispatch({ type: "INIT" });
   return (
     <Box my={4}>
       <Box m={2}>

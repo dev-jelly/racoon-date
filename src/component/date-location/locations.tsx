@@ -3,7 +3,7 @@ import React from "react";
 import SelectButton from "../common/select-button";
 import { Typography } from "@material-ui/core";
 import { Link, useRouteMatch } from "react-router-dom";
-import { anyang, gasan, pyeongchon } from "../../types/location";
+import { anyang, gasan, gwangmyeong, pyeongchon } from "../../types/location";
 
 const Locations = () => {
   let { path, url } = useRouteMatch();
@@ -23,11 +23,17 @@ const Locations = () => {
         <Link to={url.replace("none", anyang)}>
           <SelectButton buttonText={"가깝다! 안양"} />
         </Link>
-        <Link to={url.replace("none", pyeongchon)}>
-          <SelectButton buttonText={"핫플레이스! 범계, 평촌"} />
-        </Link>
-        <Link to={url.replace("none", gasan)}>
-          <SelectButton buttonText={"이외의 가성비! 가산 디지털 단지"} />
+        <Box>
+          <SelectButton buttonText={"핫플레이스! 범계, 평촌"} disabled={true} />
+        </Box>
+        <Box>
+          <SelectButton
+            buttonText={"이외의 가성비! 가산 디지털 단지"}
+            disabled={true}
+          />
+        </Box>
+        <Link to={url.replace("none", gwangmyeong)}>
+          <SelectButton buttonText={"더 가까운 광명!"} />
         </Link>
         <Box>
           <SelectButton

@@ -10,11 +10,13 @@ const SelectButton = (props: Props) => {
   return (
     <Box
       display={"flex"}
+      p={2}
       flex={1}
       alignItems={"center"}
       justifyContent={"center"}
+      minWidth={120}
     >
-      <Button variant={"contained"} color={"primary"} size={"large"} {...props}>
+      <Button variant={"contained"} color={"primary"} {...props}>
         {props.buttonText}
       </Button>
     </Box>

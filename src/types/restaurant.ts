@@ -1,5 +1,5 @@
 import { DateDetail, DateTimeType, dinner, lunch } from "./dates";
-import { anyang, DateLocation, gasan } from "./location";
+import { anyang, DateLocation, gasan, gwangmyeong } from "./location";
 import { PlaceType } from "./place";
 
 export const restaurant = "restaurants" as const;
@@ -82,6 +82,23 @@ export const restaurants: DateDetail[] = [
     "커리숲",
     "국물 베이스의 스프커리! 과연 소녀의 입맛에도 맞을 수 있을까? 영업시간 11:30 ~ 21:00",
     "https://www.mangoplate.com/restaurants/8Osj2Mm-57Ux"
+  ),
+
+  // 광명
+  new Restaurant(
+    [lunch, dinner],
+    gwangmyeong,
+    "배떡",
+    "그 소녀의 소울푸드?! 폭설 시엔 포장만 가능;; 영업시간 11:00 - 23:00, BT 15:00~16:00",
+    "http://www.baedduck.co.kr/"
+  ),
+
+  new Restaurant(
+    [lunch, dinner],
+    gwangmyeong,
+    "브로버거",
+    "사실 젤리는 이 버거가 궁금하다.",
+    "https://www.mangoplate.com/restaurants/5MR0V9vWzzEI"
   ),
 
   // 가산

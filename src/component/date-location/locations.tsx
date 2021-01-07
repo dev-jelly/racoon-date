@@ -15,32 +15,31 @@ const Locations = () => {
       </Typography>
       <Box
         p={4}
+        flexWrap={"wrap"}
         display={"flex"}
         flexDirection={"row"}
-        justifyContent={"space-around"}
-        alignItems={"center"}
+        // justifyContent={"space-around"}
+        // alignItems={"center"}
       >
         <Link to={url.replace("none", anyang)}>
           <SelectButton buttonText={"가깝다! 안양"} />
         </Link>
-        <Box>
-          <SelectButton buttonText={"핫플레이스! 범계, 평촌"} disabled={true} />
-        </Box>
-        <Box>
-          <SelectButton
-            buttonText={"이외의 가성비! 가산 디지털 단지"}
-            disabled={true}
-          />
-        </Box>
+
+        <SelectButton buttonText={"핫플레이스! 범계, 평촌"} disabled={true} />
+
+        <SelectButton
+          buttonText={"이외의 가성비! 가산 디지털 단지"}
+          disabled={true}
+        />
+
         <Link to={url.replace("none", gwangmyeong)}>
           <SelectButton buttonText={"더 가까운 광명!"} />
         </Link>
-        <Box>
-          <SelectButton
-            buttonText={"역시 맛집은 홍대지! (아직 준비중...)"}
-            disabled={true}
-          />
-        </Box>
+
+        <SelectButton
+          buttonText={"역시 맛집은 홍대지! (아직 준비중...)"}
+          disabled={true}
+        />
       </Box>
     </Box>
   );

@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import { dateReducers } from "./redux/actions";
 import { createStore } from "redux";
 
-import { Router } from "react-router-dom";
+import { BrowserRouter, Router } from "react-router-dom";
 import Main from "./component/main";
 import { createBrowserHistory } from "history";
 
@@ -17,7 +17,9 @@ function App() {
   return (
     <Provider store={store}>
       <Router history={history}>
-        <Main />
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
+          <Main />
+        </BrowserRouter>
       </Router>
     </Provider>
   );

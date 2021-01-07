@@ -25,10 +25,12 @@ const Intro = () => {
         <Typography align={"center"} variant={"h1"}>
           라쿤 데이트
         </Typography>
-        <Typography align={"center"}>
+        <Typography align={"center"} color={"textSecondary"}>
           너부리를 좋아하는 한 소녀를 위한 데이트 계획서!
         </Typography>
-        <Typography align={"center"}>아래의 버튼을 눌러 시작하세요!</Typography>
+        <Typography align={"center"} color={"textSecondary"}>
+          아래의 버튼을 눌러 시작하세요!
+        </Typography>
       </Box>
 
       <Box>
@@ -39,6 +41,7 @@ const Intro = () => {
         </Box>
         <Box
           display={"flex"}
+          flexWrap={"wrap"}
           flexDirection={"row"}
           justifyContent={"space-around"}
           alignItems={"center"}

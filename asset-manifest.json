@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/racoon-date/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/racoon-date/static/js/main.0ba21e2a.chunk.js",
+    "main.js.map": "/racoon-date/static/js/main.0ba21e2a.chunk.js.map",
+    "runtime-main.js": "/racoon-date/static/js/runtime-main.ee70254d.js",
+    "runtime-main.js.map": "/racoon-date/static/js/runtime-main.ee70254d.js.map",
+    "static/js/2.1ece9fde.chunk.js": "/racoon-date/static/js/2.1ece9fde.chunk.js",
+    "static/js/2.1ece9fde.chunk.js.map": "/racoon-date/static/js/2.1ece9fde.chunk.js.map",
+    "static/js/3.ce84f9ed.chunk.js": "/racoon-date/static/js/3.ce84f9ed.chunk.js",
+    "static/js/3.ce84f9ed.chunk.js.map": "/racoon-date/static/js/3.ce84f9ed.chunk.js.map",
+    "index.html": "/racoon-date/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/racoon-date/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.1ece9fde.chunk.js.LICENSE.txt": "/racoon-date/static/js/2.1ece9fde.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ee70254d.js",
+    "static/js/2.1ece9fde.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.0ba21e2a.chunk.js"
+  ]
+}

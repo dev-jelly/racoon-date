@@ -83,6 +83,13 @@ export const restaurants: DateDetail[] = [
     "국물 베이스의 스프커리! 과연 소녀의 입맛에도 맞을 수 있을까? 영업시간 11:30 ~ 21:00",
     "https://www.mangoplate.com/restaurants/8Osj2Mm-57Ux"
   ),
+  new Restaurant(
+    [lunch, dinner],
+    anyang,
+    "원조닭꼬치",
+    "닭꼬치 가게가 있다고!! 영업시간 ??",
+    "https://www.mangoplate.com/restaurants/FEatq61AnCsv"
+  ),
 
   // 광명
   new Restaurant(

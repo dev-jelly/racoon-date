@@ -87,7 +87,7 @@ export const restaurants: DateDetail[] = [
     [lunch, dinner],
     anyang,
     "원조닭꼬치",
-    "닭꼬치 가게가 있다고!! 영업시간 ??",
+    "닭꼬치 가게가 있다고!! 영업시간 15:00 ~ 02:00, 첫째주 셋째주 일요일 휴무",
     "https://www.mangoplate.com/restaurants/FEatq61AnCsv"
   ),
 

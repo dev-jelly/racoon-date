@@ -1,5 +1,5 @@
 import Box from "@material-ui/core/Box";
-import { Button, ButtonProps, Grid } from "@material-ui/core";
+import { Button, ButtonProps } from "@material-ui/core";
 import React from "react";
 
 type Props = {

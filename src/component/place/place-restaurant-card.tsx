@@ -58,6 +58,9 @@ const RestaurantCard = (restaurant: Restaurant) => {
           <Typography className={classes.text} color="textSecondary">
             {restaurant.text}
           </Typography>
+          <Typography className={classes.text} color="textSecondary">
+            영업시간: {restaurant.openingHours}
+          </Typography>
           {restaurant.link && (
             <Typography variant="body2" component="p">
               <Link href={restaurant.link} target={"_blank"}>
@@ -67,7 +70,11 @@ const RestaurantCard = (restaurant: Restaurant) => {
           )}
         </CardContent>
         <CardActions>
-          <SelectButton onClick={onClick} buttonText={"선택"} />
+          <SelectButton
+            fullWidth={true}
+            onClick={onClick}
+            buttonText={"선택"}
+          />
         </CardActions>
       </Card>
     </Box>

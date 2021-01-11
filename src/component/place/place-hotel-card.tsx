@@ -7,7 +7,7 @@ import {
   makeStyles,
   Typography,
 } from "@material-ui/core";
-import { Restaurant } from "../../types/restaurant";
+
 import SelectButton from "../common/select-button";
 import React from "react";
 import { DateLocation } from "../../types/location";
@@ -15,7 +15,6 @@ import { DateTimeType, nextTime } from "../../types/dates";
 import { useHistory, useParams, useRouteMatch } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { ADD_DATE, DateAction } from "../../redux/actions";
-import * as path from "path";
 import { Hotel } from "../../types/hotel";
 import { hotelUrl } from "../../types/urls";
 

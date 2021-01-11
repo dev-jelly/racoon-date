@@ -12,19 +12,22 @@ export class Restaurant implements DateDetail {
 
   text: string = "";
   link: string = "";
+  openingHours: string = "";
 
   constructor(
     types: DateTimeType[],
     dateLocation: DateLocation,
     title: string,
     text: string = "",
-    link: string = ""
+    link: string = "",
+    openingHours: string = ""
   ) {
     this.dateTime = types;
     this.dateLocation = dateLocation;
     this.title = title;
     this.text = text;
     this.link = link;
+    this.openingHours = openingHours;
   }
 }
 
@@ -38,50 +41,56 @@ export const restaurants: DateDetail[] = [
     [lunch, dinner],
     anyang,
     "돈까스(드림카츠)",
-    "부드러운 돈까스! 드림카츠!, 영업시간 11:30~14:30(L.O), 17:00~20:00(L.O)",
-    "https://www.mangoplate.com/restaurants/mewu1wdXv2kY"
+    "부드러운 돈까스! 드림카츠!",
+    "https://www.mangoplate.com/restaurants/mewu1wdXv2kY",
+    "11:30~14:30(L.O), 17:00~20:00(L.O)"
   ),
   new Restaurant(
     [lunch, dinner],
     anyang,
     "돈까스(곤돈)",
-    "트러플 소금의 프리미엄 돈까스! 영업시간 12:00~14:30(L.O), 17:00~20:00(L.O)",
-    "https://www.mangoplate.com/restaurants/L4HBVyZa75uu"
+    "트러플 소금의 프리미엄 돈까스!",
+    "https://www.mangoplate.com/restaurants/L4HBVyZa75uu",
+    "12:00~14:30(L.O), 17:00~20:00(L.O)"
   ),
   new Restaurant(
     [lunch, dinner],
     anyang,
     "비아김밥",
-    "망플 4점대의 김밥찝이 있다?! 뿌숑빠숑! 포장만 가능! 이곳에서 김밥을 사서 숚소로 가는 것도 하나의 방법이죠! ",
+    "망플 4점대의 김밥찝이 있다?! 뿌숑빠숑! 포장만 가능! 이곳에서 김밥을 사서 숙소로 가는 것도 하나의 방법이죠! ",
     "https://www.mangoplate.com/restaurants/sHUsU9--vmyI"
   ),
   new Restaurant(
     [lunch, dinner],
     anyang,
     "안양감자탕",
-    "세상에 하얀 감자탕이 있다고?!! 든든 허이 감자탕 한그릇 어때요? 영업시간 11:00 - 05:00",
-    "https://www.mangoplate.com/restaurants/6VksLIbIGx"
+    "세상에 하얀 감자탕이 있다고?!! 든든 허이 감자탕 한그릇 어때요? ",
+    "https://www.mangoplate.com/restaurants/6VksLIbIGx",
+    "11:00 - 05:00"
   ),
   new Restaurant(
     [lunch, dinner],
     anyang,
     "밀로버거",
-    "가끔 그런 날이 있어 버거를 먹고 싶은날 영업시간 12:00 - 20:30(LO)",
-    "https://www.mangoplate.com/restaurants/sKJpGiwCEgeC"
+    "가끔 그런 날이 있어 버거를 먹고 싶은날",
+    "https://www.mangoplate.com/restaurants/sKJpGiwCEgeC",
+    "12:00 - 20:30(LO)"
   ),
   new Restaurant(
     [lunch, dinner],
     anyang,
     "퓨전 파스타, 육회비빔밥(얼룩말식당)",
-    "댕리단길의 보스! 얼룩말 식당! 메뉴가 넘 특이하다. 영업시간 11:30 ~ 15:30, 17:30 ~ 22:00",
-    "https://www.mangoplate.com/restaurants/At7abxUqoYuk"
+    "댕리단길의 보스! 얼룩말 식당! 메뉴가 넘 특이하다.",
+    "https://www.mangoplate.com/restaurants/At7abxUqoYuk",
+    "11:30 ~ 15:30, 17:30 ~ 22:00"
   ),
   new Restaurant(
     [lunch, dinner],
     anyang,
     "커리숲",
-    "국물 베이스의 스프커리! 과연 소녀의 입맛에도 맞을 수 있을까? 영업시간 11:30 ~ 21:00",
-    "https://www.mangoplate.com/restaurants/8Osj2Mm-57Ux"
+    "국물 베이스의 스프커리! 과연 소녀의 입맛에도 맞을 수 있을까?",
+    "https://www.mangoplate.com/restaurants/8Osj2Mm-57Ux",
+    "11:30 ~ 21:00"
   ),
 
   // 광명
@@ -89,8 +98,9 @@ export const restaurants: DateDetail[] = [
     [lunch, dinner],
     gwangmyeong,
     "배떡",
-    "그 소녀의 소울푸드?! 폭설 시엔 포장만 가능;; 영업시간 11:00 - 23:00, BT 15:00~16:00",
-    "http://www.baedduck.co.kr/"
+    "그 소녀의 소울푸드?! 폭설 시엔 포장만 가능;;",
+    "http://www.baedduck.co.kr/",
+    "11:00 - 23:00, BT 15:00~16:00"
   ),
 
   new Restaurant(
@@ -106,15 +116,17 @@ export const restaurants: DateDetail[] = [
     [lunch, dinner],
     gasan,
     "여신족발",
-    "가산에서 제일 유명한 족발집?! 영업시간 16:00 - 23:30",
-    "https://www.mangoplate.com/restaurants/BGIEFmOCX3"
+    "가산에서 제일 유명한 족발집?!",
+    "https://www.mangoplate.com/restaurants/BGIEFmOCX3",
+    "16:00 - 23:30"
   ),
   new Restaurant(
     [lunch, dinner],
     gasan,
     "두껍삼",
-    "다 구워주는 삼겹살! 영업시간 14:00 - 23:00",
-    "https://www.mangoplate.com/restaurants/GALTIxNsQTev"
+    "다 구워주는 삼겹살!",
+    "https://www.mangoplate.com/restaurants/GALTIxNsQTev",
+    "14:00 - 23:00"
   ),
   new Restaurant(
     [lunch, dinner],
